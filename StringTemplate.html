@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Template</title>
+</head>
+<body>
+    <!-- String Template yang diisi secara langsung untuk menampilkan output secara langsung -->
+    <script>
+        // Membuat Variabel baru dan diisi langsung
+        const output = "String Template yang diisi secara langsung untuk menampilkan output secara langsung";
+        const FirstName = "Muhammad";
+        const MiddleName = "-";
+        const LastName = "Zikri";
+        const Place = "Padang";
+        const nilaimtk = 84;
+        const nilaifisika = 90;
+        const multiline = `Semoga Kedepannya Bisa Menjadi Programming
+        Khususnya dalam Bahasa Pemrograman Javascript
+        Butuh Waktu Lebih dari 3 Tahun untuk Mahir dan Berkembang Ke Arah Yang Lebih Baik
+        Semoga Kedepannya Sesuai Harapan dan Membuat Bangga Orang Tua
+        Aamiin Ya Rabbal Allamiin...
+        `;
+
+        // Operator And
+        const totalnilai = nilaimtk && nilaifisika;
+
+        // Operator Or
+        const nilaitotal = nilaimtk || nilaifisika;
+
+        // Operator Unity
+        const score = !nilaimtk;
+        const hasil = !nilaifisika;
+
+        // Memanggil Variabel
+        const Nama = `Name : ${FirstName} ${MiddleName} ${LastName}`;
+        const nilai = `Operator And : ${totalnilai>70}`;
+        const total = `Operator Or : ${nilaitotal<60}`;
+        const jumlah = `Operator Unity : ${score>90}, ${hasil<60}`;
+        const Tempat = `Lokasi : ${Place}`;
+
+        // Output
+        console.info(output);
+        console.info(Nama);
+        console.info(Tempat);
+        console.info(nilai);
+        console.info(total);
+        console.info(jumlah);
+        console.error(multiline);
+
+    </script>
+    <!-- String Template yang diisi secara langsung untuk menampilkan output secara langsung -->
+
+    <!-- String Template yang diisi secara langsung untuk menampilkan output file secara terpisah -->
+    <script src="StringTemplate.js"></script>
+    <!-- String Template yang diisi secara langsung untuk menampilkan output file secara terpisah -->
+    
+</body>
+</html>
